@@ -1,26 +1,52 @@
-[# Speech to Text + Summary App
+# 🎙️ Speech to Text + Summary App
 
-A simple Streamlit app for:
-- Speech-to-text transcription using Whisper (local)
-- Text summarization using OpenAI (optional)
+A simple web app built with **Streamlit** that lets you:
 
-## Supported languages
+• Upload audio or video files  
+• Transcribe speech into text using **Whisper (local, offline)**  
+• Generate a short summary (either locally or via OpenAI)  
+
+Supported languages:
 - English (EN)
 - Polish (PL)
 - Ukrainian (UK)
 
-## Features
-- Upload audio or video files (MP3, MP4, WAV, M4A)
-- Local transcription (no API key needed)
-- Optional AI summary (requires OpenAI API key)
-- Simple web interface
+Live demo:  
+👉 https://stt-summary-app-acxmlbsdb8834doafrmer4.streamlit.app/
 
-## How it works
-- Transcription runs locally using Whisper
-- Summarization is done via OpenAI API (if enabled)
+---
 
-## Run locally
+## ✨ Features
+
+- 🎧 Upload audio or video (MP3, MP4, WAV, etc.)
+- 📝 Speech-to-text transcription using `faster-whisper` (runs locally, no API needed)
+- 📌 Automatic summary generation
+- 🌍 Language selection: EN, PL, UK
+- 🔒 OpenAI API key is **optional** and used **only for better summaries**
+- ⬇️ Download transcript and summary as `.txt` files
+
+---
+
+## ⚙️ How it works
+
+### Transcription
+Uses `faster-whisper` locally:
+- Runs on CPU
+- No data leaves the server for transcription
+
+### Summary
+Two options:
+1. **Local summary** (default)  
+   Simple rule-based summarization, no API needed.
+2. **OpenAI summary** (optional)  
+   Uses GPT for higher quality summaries if you provide an API key.
+
+---
+
+## 🖥️ Run locally
+
+### 1. Clone repository
+
 ```bash
-pip install -r requirements.txt
-streamlit run app.py
-](https://stt-summary-app-acxmlbsdb8834doafrmer4.streamlit.app/)
+git clone https://github.com/Reznikan/stt-summary-app.git
+cd stt-summary-app
