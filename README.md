@@ -1,4 +1,4 @@
-# Speech to Text + Summary App
+[# Speech to Text + Summary App
 
 A simple Streamlit app for:
 - Speech-to-text transcription using Whisper (local)
@@ -23,3 +23,4 @@ A simple Streamlit app for:
 ```bash
 pip install -r requirements.txt
 streamlit run app.py
+](https://stt-summary-app-acxmlbsdb8834doafrmer4.streamlit.app/)
