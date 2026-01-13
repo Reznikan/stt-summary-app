@@ -1,5 +1,5 @@
 streamlit==1.52.2
+faster-whisper==1.1.0
+ctranslate2==4.6.0
+ffmpeg-python==0.2.0
 openai==1.15.0
-openai-whisper
-torch
-ffmpeg-python
